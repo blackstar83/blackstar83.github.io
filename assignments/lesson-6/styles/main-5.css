@@ -32,6 +32,7 @@ header h1 {
     margin: 0 0 0 0;
     text-align: center;
 }
+
 /*
 header img {
     float: left;
@@ -49,23 +50,44 @@ nav {
 
 nav button {}
 
-nav ul {}
+nav ul {
+    background-color: aquamarine;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border: 1px solid #555;
+}
 
-nav ul.hide{
+nav ul.hide {
     display: none;
 }
 
-nav ul li {}
+nav ul li {
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
 
-nav ul li:last-child {}
+nav ul li:last-child {
+    border-bottom: none;
+}
 
-nav ul li a {}
+nav ul li a {
+    display: block;
+    color: brown;
+    padding: 8px 16px;
+    text-decoration: none;
+}
 
-nav ul li.active a {}
+nav ul li.active a {
+    background-color: lightcoral;
+}
 
-nav ul li a:hover {}
+nav ul li a:hover {
+    background-color: lightskyblue;
+}
 
-main .current img{
+main .current img {
     width: 150px;
     height: 120px;
 }
@@ -79,6 +101,7 @@ main figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
 }
+
 /*
 main figure img {
     max-width: 100%;
@@ -102,13 +125,15 @@ td {
 
 /*article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 450px;
-    height: 200px;
-    /* fill the page in the small/phone view */
-    margin: 10px;
-}*/
 
-article h3 {
+width: 450px;
+height: 200px;
+/* fill the page in the small/phone view */
+
+margin: 10px;
+}
+
+*/ article h3 {
     text-align: center;
 }
 
