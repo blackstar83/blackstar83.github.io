@@ -50,27 +50,27 @@ nav {
 
 nav button {}
 
-nav ul {
+/*nav ul {
     background-color: aquamarine;
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
     border: 1px solid #555;
-}
+}*/
 
 nav ul.hide {
     display: none;
 }
 
-nav ul li {
+/*nav ul li {
     border-bottom: 1px solid #555;
-    text-align: center;
+    text-align: center;*/
 }
 
-nav ul li:last-child {
+/*nav ul li:last-child {
     border-bottom: none;
-}
+}*/
 
 nav ul li a {
     display: block;
@@ -87,7 +87,7 @@ nav ul li a:hover {
     background-color: lightskyblue;
 }
 
-main .current img {
+*/ main .current img {
     width: 150px;
     height: 120px;
 }
