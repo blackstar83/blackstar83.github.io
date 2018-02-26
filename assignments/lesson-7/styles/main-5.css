@@ -1,0 +1,186 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: sans-serif monospace;
+    font-size: 16px;
+    background-color: coral
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    background-color: cadetblue;
+    color: aqua;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav button {}
+
+nav ul {
+    background-color: aquamarine;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #555;
+    text-align: center;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    display: block;
+    color: brown;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: lightcoral;
+}
+
+nav ul li a:hover {
+    background-color: lightskyblue;
+}
+
+main .current img {
+    width: 150px;
+    height: 120px;
+}
+
+main h2 {
+    color: aqua;
+    text-align: center;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+section .forecast table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.forecast {
+    display: none;
+}
+
+.town-article {
+    border-style: solid;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: cadetblue;
+    color: aqua;
+    margin: 0px 0px 0px 0px;
+    padding: 40px 10px 40px 10px
+}
+
+footer aside {
+    text-align: center;
+}
+
+footer > p {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    margin-top: 10px;
+    line-height: 5px;
+
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.current {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.current p {
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.highlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    align-items: center;
+}
+
+.articlediv {
+    display: flex;
+    flex-direction: column;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+}
+
+section h3 {
+    text-align: center;
+}
+.grid figure img:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
