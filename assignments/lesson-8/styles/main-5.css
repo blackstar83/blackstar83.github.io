@@ -180,6 +180,55 @@ section h3 {
     box-shadow: 5px 5px 10px gray;
 }
 
+fieldset {
+    background-color: blanchedalmond;
+    border-radius: .8em;
+    margin: 1.5em;
+    border-color: cornflowerblue solid 1px;
+}
+
+legend {
+    color: blanchedalmond;
+    margin-left: 6%;
+    padding: .5em;
+    border-color: blanchedalmond solid 1px;
+    background-color: cornflowerblue;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: cornflowerblue;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.sbutton {
+    -webkit-appearance: none;
+    color: blanchedalmond;
+    border-color: blanchedalmond solid 1px;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0px 2em 25px;
+    font-size: 1em;
+    padding: .6em;
+    background-color: cornflowerblue;
+    box-shadow: 4px 4px 10px #666;    
+}
+.thanks {
+    text-align: center;
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 600;
+}
+
 
 /* This structure refers to p elements that are direct children of the footer element */
 
