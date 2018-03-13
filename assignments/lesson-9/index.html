@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tri-Cities Climate</title>
     <meta name="author" content="Gleyn Juarez">
-    <meta name="description" content="Thank you form submission">
+    <meta name="description" content="Home Page for Tri-Cities Climate">
     <!-- external style references in the proper cascading order -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <!-- font-family: 'Oswald', sans-serif; -->
@@ -39,17 +39,18 @@
     <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main class="thanks">
-  <p>Thank you for filling out the information in our Storm Center page.</p>
+    <main>
+        <section class="towndata">
+        </section>
     </main>
 
     <footer>
@@ -61,6 +62,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/towndata.js"></script>
 
 </body>
 

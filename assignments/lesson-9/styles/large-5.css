@@ -42,4 +42,15 @@
     .grid figure img:hover {
         box-shadow: 5px 5px 10px gray;
     }
+    .towndata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        color: darkcyan;
+        text-align: center;
+        font-weight: 600;
+        font-size: 25px;
+    }
 }
+
