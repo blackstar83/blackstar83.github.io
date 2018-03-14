@@ -123,5 +123,21 @@
     .grid figure img:hover {
         box-shadow: 5px 5px 10px gray;
     }
+
+    .cname {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: darkcyan;
+        font-size: 25px
+    }
+
+    .cdata {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        color: darkcyan;
+        font-size: 20px;
+    }
 }
 
