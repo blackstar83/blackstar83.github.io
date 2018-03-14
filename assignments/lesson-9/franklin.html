@@ -55,56 +55,61 @@
             </figure>
             <section>
                 <div class="summary">
-                    <h3>Franklin</h3>
-                    <div class="current">
-                        <p>Sunny</p>
-                        <picture>
-                            <img src="images/franklin-sunny-large.jpg" alt="Sun Image" sizes="100vw" srcset="images/franklin-sunny-large.jpg 1028w, images/franklin-sunny-medium.jpg 800w, images/franklin-sunny-main.jpg 200w">
-                        </picture>
-                    </div>
-
-                    <div class="highlow">
-                        <p>High:89&#8457;</p>
-                        <p>Low:72&#8457;</p>
-                    </div>
-
-                    <div class="conditions">
-                        <p>Precipitation:0%</p>
-                        <p>Wind Speed:5 mph SW</p>
-                    </div>
-                    <form action="" method=post name=windform>
-                        <center>
-                            <table border=1 cellpadding=3 cellspacing=0 width="250">
-                                <tr>
-                                    <td align=center>
-                                        Wind Speed (MPH) =
-                                    </td>
-                                    <td align=center>
-                                        <input type=text name=wind value="" size=6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align=center>
-                                        Air Temperature (ºF) =
-                                    </td>
-                                    <td align=center>
-                                        <input type=text name=temp value="" size=6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan=2 align=center>
-                                        <br>
-                                        <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
-                                        <p>
-                                            <input name=windchill type=text value="" size=10> º F
-                                    </td>
-                                </tr>
-                            </table>
-                        </center>
-                    </form>
+                    <h1>City: <span id="cityname">City</span></h1>
+                    <p>Motto: <span id="motto">Our Motto</span></p>
+                    <p>Year Founded: <span id="yfounded">1983</span></p>
+                    <p>Population: <span id="pop">123</span></p>
+                    <p>Annual Rainfall: <span id="rain">83</span>in</p>
+                    <p>Events: <span id="events">Stuff</span></p>
+                </div>
+                <div class="current">
+                    <p>Sunny</p>
+                    <picture>
+                        <img src="images/franklin-sunny-large.jpg" alt="Sun Image" sizes="100vw" srcset="images/franklin-sunny-large.jpg 1028w, images/franklin-sunny-medium.jpg 800w, images/franklin-sunny-main.jpg 200w">
+                    </picture>
                 </div>
 
-            </section>
+                <div class="highlow">
+                    <p>Current Temperature: <span id="hi">High:89&#8457;</span></p>
+                </div>
+
+                <div class="conditions">
+                    <p><span id="precip">Precipitation:0%</span></p>
+                    <p><span id="windspd">Wind Speed:5 mph SW</span></p>
+                </div>
+                <form action="" method=post name=windform>
+                    <center>
+                        <table border=1 cellpadding=3 cellspacing=0 width="250">
+                            <tr>
+                                <td align=center>
+                                    Wind Speed (MPH) =
+                                </td>
+                                <td align=center>
+                                    <input type=text name=wind value="" size=6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=center>
+                                    Air Temperature (ºF) =
+                                </td>
+                                <td align=center>
+                                    <input type=text name=temp value="" size=6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=2 align=center>
+                                    <br>
+                                    <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
+                                    <p>
+                                        <input name=windchill type=text value="" size=10> º F
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </form>
+        </div>
+
+        </section>
         </div>
 
         <section class="forecast">
@@ -124,16 +129,29 @@
                 </tr>
                 <tbody>
                     <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
+                        <td>High <span id="hi1">89&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi2">87&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi3">78&deg;</span>&deg;F</td>
+                        <td>High <span id="hi4">75&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi5">72&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi6">72&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi7">79&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi8">83&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi9">85&deg;F</span>&deg;F</td>
+                        <td>High <span id="hi10">89&deg;F</span>&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td>Low <span id="lo1"></span>&deg;F</td>
+                        <td>Low <span id="lo2"></span>&deg;F</td>
+                        <td>Low <span id="lo3"></span>&deg;F</td>
+                        <td>Low <span id="lo4"></span>&deg;F</td>
+                        <td>Low <span id="lo5"></span>&deg;F</td>
+                        <td>Low <span id="lo6"></span>&deg;F</td>
+                        <td>Low <span id="lo7"></span>&deg;F</td>
+                        <td>Low <span id="lo8"></span>&deg;F</td>
+                        <td>Low <span id="lo9"></span>&deg;F</td>
+                        <td>Low <span id="lo10"></span>&deg;F</td>
+
                     </tr>
                 </tbody>
             </table>
@@ -161,6 +179,9 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/towndatafr.js"></script>
+    <script src="scripts/fweather1.js"></script>
+    <script src="scripts/fweather2.js"></script>
 
 </body>
 

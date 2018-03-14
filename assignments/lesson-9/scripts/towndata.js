@@ -1,39 +1,34 @@
-var section = document.querySelector('section');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function () {
-    var townData = request.response;
-    showtownData(townData);
-}
+var tData = new XMLHttpRequest();
 
-function showtownData(jsonObj) {
-    var theTowns = jsonObj['towns'];
+tData.open('GET', 'https://byui-cit230.github.io/weather/data/towndata.json', true);
 
-    for (var i = 0; i < theTowns.length; i++) {
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myPara4 = document.createElement('p');
-        var myList = document.createElement('ul');
+tData.send();
 
-        myH2.textContent = theTowns[i].name;
-        myPara1.textContent = 'Motto: ' + theTowns[i].motto;
-        myPara2.textContent = 'Year Founded: ' + theTowns[i].yearFounded;
-        myPara3.textContent = 'Population:' + theTowns[i].currentPopulation;
-        myPara4.textContent = 'Annual Rainfall: ' + theTowns[i].averageRainfall + 'in';
+tData.onload = function a() {
+    var frWeather = JSON.parse(tData.responseText);
+    console.log(frWeather);
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myPara4);
-        myArticle.appendChild(myList);
+    document.getElementById('cityname1').innerHTML = frWeather.towns["0"].name;
+    document.getElementById('motto1').innerHTML = frWeather.towns["0"].motto;
+    document.getElementById('yfounded1').innerHTML = frWeather.towns["0"].yearFounded;
+    document.getElementById('pop1').innerHTML = frWeather.towns["0"].currentPopulation;
+    document.getElementById('rain1').innerHTML = frWeather.towns["0"].averageRainfall;
 
-        section.appendChild(myArticle);
-    }
+    var grWeather = JSON.parse(tData.responseText);
+    console.log(grWeather);
+
+    document.getElementById('cityname2').innerHTML = grWeather.towns["1"].name;
+    document.getElementById('motto2').innerHTML = grWeather.towns["1"].motto;
+    document.getElementById('yfounded2').innerHTML = grWeather.towns["1"].yearFounded;
+    document.getElementById('pop2').innerHTML = grWeather.towns["1"].currentPopulation;
+    document.getElementById('rain2').innerHTML = grWeather.towns["1"].averageRainfall;
+
+    var spWeather = JSON.parse(tData.responseText);
+    console.log(spWeather);
+
+    document.getElementById('cityname3').innerHTML = spWeather.towns["3"].name;
+    document.getElementById('motto3').innerHTML = spWeather.towns["3"].motto;
+    document.getElementById('yfounded3').innerHTML = grWeather.towns["3"].yearFounded;
+    document.getElementById('pop3').innerHTML = spWeather.towns["3"].currentPopulation;
+    document.getElementById('rain3').innerHTML = spWeather.towns["3"].averageRainfall;
 }
