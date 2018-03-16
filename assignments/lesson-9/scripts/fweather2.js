@@ -1,6 +1,6 @@
 var frWeather2 = new XMLHttpRequest();
 
-frWeather2.open('GET', 'https://api.wunderground.com/api/3e4c6be39f528295/forecast10day/q/MN/Franklin.json', true);
+frWeather2.open('GET', '//api.wunderground.com/api/3e4c6be39f528295/forecast10day/q/MN/Franklin.json', true);
 
 frWeather2.send();
 
