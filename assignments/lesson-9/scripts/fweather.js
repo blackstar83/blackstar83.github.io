@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/3e4c6be39f528295/conditions/q/CA/San_Francisco.json', true);
+weatherObject.open('GET', '//api.wunderground.com/api/3e4c6be39f528295/conditions/q/CA/San_Francisco.json', true);
 
 weatherObject.send();
 
