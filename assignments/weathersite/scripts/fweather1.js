@@ -14,7 +14,6 @@ frWeather1.onload = function () {
     document.getElementById('precip').innerHTML = weatherInfo1.current_observation.precip_1hr_in;
     document.getElementById('cclimate').innerHTML = weatherInfo1.current_observation.icon;
     document.getElementById('wchill').innerHTML = weatherInfo1.current_observation.windchill_f;
-    document.getElementById('wicon').src = weatherInfo1.current_observation.icon_url;
 
     var icon_path = weatherInfo1.current_observation.icon_url;
     var urlString = document.location.href;
@@ -25,4 +24,5 @@ frWeather1.onload = function () {
     if(found>=0) {
         icon_path = icon_path.replace("http","https");
     }
+    document.getElementById('wicon').src = weatherInfo1.icon_path;
 };
