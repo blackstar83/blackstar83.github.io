@@ -13,5 +13,7 @@ tData.onload = function () {
     document.getElementById('yfounded').innerHTML = frWeather.towns["0"].yearFounded;
     document.getElementById('pop').innerHTML = frWeather.towns["0"].currentPopulation;
     document.getElementById('rain').innerHTML = frWeather.towns["0"].averageRainfall;
-    document.getElementById('events').innerHTML = frWeather.towns["0"].events;
+    document.getElementById('events1').innerHTML = frWeather.towns["0"].events["0"];
+    document.getElementById('events2').innerHTML = frWeather.towns["0"].events[1];
+    document.getElementById('events3').innerHTML = frWeather.towns["0"].events[2];
 }
