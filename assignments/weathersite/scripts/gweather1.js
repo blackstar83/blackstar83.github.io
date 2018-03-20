@@ -21,8 +21,9 @@ frWeather1.onload = function () {
     var found = urlString.indexOf("https");
     console.log(found);
 
-    if(found>=0) {
-        icon_path = icon_path.replace("http","https");
+    if (found >= 0) {
+        icon_path = icon_path.replace("http", "https");
+
+        document.getElementById('wicon').src = icon_path;
     }
-    document.getElementById('wicon').src = weatherInfo1.icon_path;
 };
