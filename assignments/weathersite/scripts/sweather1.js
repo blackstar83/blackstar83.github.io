@@ -1,6 +1,6 @@
 var frWeather1 = new XMLHttpRequest();
 
-frWeather1.open('GET', 'http://api.wunderground.com/api/3e4c6be39f528295/conditions/q/MN/Franklin.json', true);
+frWeather1.open('GET', 'http://api.wunderground.com/api/3e4c6be39f528295/conditions/q/OR/Springfield.json', true);
 
 frWeather1.send();
 

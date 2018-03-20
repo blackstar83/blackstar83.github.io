@@ -242,6 +242,10 @@ input.sbutton {
     font-size: 15px;
 }
 
+.current {
+    text-transform: capitalize;
+}
+
 
 /* This structure refers to p elements that are direct children of the footer element */
 
